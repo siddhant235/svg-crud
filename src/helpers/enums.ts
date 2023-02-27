@@ -1,0 +1,8 @@
+export enum ActionTypes{
+    LOGIN="LOGIN",
+    CREATE_GAME="CREATE_GAME",
+    UPDATE_GANE="UPDATE_GAME",
+    GET_GAME="GET_GAME",
+    GET_ALL_GAMES="GET_GAMES",
+    DELETE_GAME="DELETE_GAME"
+}
