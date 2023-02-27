@@ -41,9 +41,16 @@ const CreateGame = (props: GameCreateProps) => {
         }
         setShowCreate(false)
     }
+
+    const handleClose=()=>{
+        setShowCreate(false)
+    }
     return (
         <div className="creategame_container">
             <Card>
+                <div className="close_button" onClick={handleClose}>
+                    close
+                </div>
                 <div className="creategame_card_content">
                     <div className="game_title">
 

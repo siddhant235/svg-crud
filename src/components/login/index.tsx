@@ -1,4 +1,4 @@
-import React, { useState,useReducer } from "react";
+import React, { useState, useReducer } from "react";
 import { Redirect, useHistory } from "react-router-dom";
 import { isUserLoggedIn } from "../../helpers/consts";
 import { ActionTypes } from "../../helpers/enums";
@@ -12,23 +12,20 @@ import "./login.css"
 const LoginComponent = () => {
     const [username, setUsername] = useState<string>("")
     const [password, setPassword] = useState<string>("")
-    const history=useHistory()
-    const [state , dispatch]=useReducer<any>(loginReducer,[])
+    const history = useHistory()
+    const [state, dispatch] = useReducer<any>(loginReducer, [])
 
-    const handleSubmit=()=>{
-        const loginData:{username:string,password:string}={
+    const handleSubmit = () => {
 
-            username:username,
-            password:password
+        const loginData: { username: string, password: string } = {
+
+            username: username,
+            password: password
         }
-       //@ts-ignore
-        dispatch({type:ActionTypes.LOGIN,data:loginData})
+        //@ts-ignore
+        dispatch({ type: ActionTypes.LOGIN, data: loginData })
 
-        if(localStorage.getItem(isUserLoggedIn)){
-           history.push("/")
-        }
 
-        
     }
     return (
         <div className="login_container">

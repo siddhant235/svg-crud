@@ -10,6 +10,7 @@ export const loginReducer = (state: unknown, action: { type: any, data: any }) =
   
         if (data.username ==adminUser.username && data.password ==adminUser.password) {
             localStorage.setItem(isUserLoggedIn, "true")
+            window.location.href="/"
         }
     
   }

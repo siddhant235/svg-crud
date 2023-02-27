@@ -1,0 +1,7 @@
+.logout{
+    float: right;
+    margin:10px;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+}

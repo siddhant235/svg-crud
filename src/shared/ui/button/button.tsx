@@ -22,7 +22,9 @@ const Button=(props:ButtonProps)=>{
 
 
     return (
-        <button style={defaultStyle} onClick={onClick}>{title}</button>
+ <div onClick={onClick}>
+            <button style={defaultStyle}>{title}</button>
+ </div>
     )
 }
 

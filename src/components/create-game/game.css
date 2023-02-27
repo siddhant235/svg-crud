@@ -7,9 +7,15 @@
 
 .creategame_card_content{
     padding: 20px;
-    position: relative;
+
 }
 
 .creategame_button{
   margin-top: 20px;
+}
+
+.close_button{
+  float: right;
+  font-size: 13px;
+  padding-right: 12px;
 }

@@ -15,13 +15,11 @@ export const gameReducer = (state: any, action: { type: ActionTypes, data: any }
 
 
     if (actionType == ActionTypes.GET_ALL_GAMES) {
-        console.log("returning all games",games)
         return games;
 
     } else if (actionType == ActionTypes.GET_GAME) {
 
         if (existingGameIndex > -1) {
-            console.log(" Game",games[existingGameIndex])
             return games[existingGameIndex]
         }
     }
@@ -51,7 +49,7 @@ export const gameReducer = (state: any, action: { type: ActionTypes, data: any }
             newData[existingGameIndex] = {
                 ...gameData
             }
-         console.log("datas",newData,gameData)
+
         return {
             ...state,
             games:newData
@@ -63,7 +61,7 @@ export const gameReducer = (state: any, action: { type: ActionTypes, data: any }
 
 
         if (existingGameIndex > -1) {
-            console.log("new game data1",existingGameIndex)
+
             const newGameData = games.filter((game: Game) => game.id !== gameData.id)
 
             return {
@@ -72,7 +70,7 @@ export const gameReducer = (state: any, action: { type: ActionTypes, data: any }
             }
         }
     
-        console.log("game deleted")
+
 
     }
 }
