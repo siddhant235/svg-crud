@@ -1,0 +1,15 @@
+.creategame_container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.creategame_card_content{
+    padding: 20px;
+    position: relative;
+}
+
+.creategame_button{
+  margin-top: 20px;
+}

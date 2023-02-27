@@ -1,6 +1,6 @@
 import { Game } from "../../interfaces/games.interface";
 
- const games:Game[]=[
+ export const games:Game[]=[
     {
             id:1,
             name: "Bottle Flip",

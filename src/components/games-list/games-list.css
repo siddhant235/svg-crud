@@ -1,0 +1,42 @@
+
+.gameslist{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-left:20px;
+    justify-content: space-around;
+}
+.gamelist_card{
+  display: flex;
+  width:300px;
+  height: 200px;
+
+
+}
+
+.gamelist_card_data{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card_actions{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    cursor: pointer;
+}
+.card_actions>p{
+    margin-left: 10px;
+}
+
+
+.card_content>p>span{
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.card_content>p{
+    font-size: 14px;
+}
